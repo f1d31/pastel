@@ -1,0 +1,65 @@
+.combined-quotes{
+  .property-price{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: right;
+    .form{
+      padding: 0;
+      .form-group{
+        margin: 0;
+        input{
+          margin: 0 10px 0;
+          transform: translateY(2px);
+        }
+        label{
+          margin: 0;
+          a{
+            color: $text-primary06;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    p{
+      margin: 0;
+    }
+  }
+  .other-project-fee{
+    padding: 0 24 px 50px;
+    p{
+      img{
+        margin-left: 9px;
+      }
+    }
+    strong{
+      position: relative;
+      &:before{
+        content: "";
+        width: 132px;
+        height: 1px;
+        background: $border-primary01;
+        position: absolute;
+        bottom: -10px;
+      }
+    }
+  }
+  .custom-margin{
+    padding: 0 12px;
+    display: none;
+    @media screen and (max-width: $screen-xs) {
+      display: block;
+    }
+    strong{
+      position: relative;
+      &:before{
+        content: "";
+        width: 81px;
+        height: 1px;
+        background: $border-primary03;
+        position: absolute;
+        bottom: -10px;
+      }
+    }
+  }
+}

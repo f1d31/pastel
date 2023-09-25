@@ -1,0 +1,93 @@
+.quote-success-modal{
+  .modal-body {
+    padding: 48px 0 0;
+    position: relative;
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      padding: 120px 0 0;
+    }
+    @media screen and (max-width: $screen-xs) {
+      padding: 30px 0 25px;
+    }
+    h2{
+      color: $primary02;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 20px 0 0;
+    }
+    .content-wrapper{
+      padding: 48px 0;
+      text-align: center;
+      background: rgba(255, 241, 228, 0.65);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      .content-cards{
+        display: flex;
+        justify-content: center;
+        ul.quote-sent-successfully{
+          text-align: left;
+          li{
+            display: block;
+            margin-bottom: 15px;
+            strong{
+              margin: 0 0 0 31px;
+              font-size: 15px;
+            }
+            img{
+              margin-right: 10px;
+            }
+            p{
+              margin: 0;
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .create-account{
+        padding: 14px 0 24px;
+        .btn-style{
+          padding: 18px 24px;
+        }
+      }
+      .btn-wrapper{
+        a{
+          text-decoration: underline;
+          color: $text-primary02;
+        }
+      }
+    }
+  }
+  .modal-content {
+    height: 70vh;
+    border-radius: unset;
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      height: 50vh;
+    }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      height: 60vh;
+    }
+    @media screen and (max-width: $screen-xs) {
+      height: 80vh;
+    }
+  }
+  .modal-dialog.modal-dialog-centered.modal-md {
+    max-width: 40%;
+    min-width: 40%;
+    margin: auto;
+    float: unset;
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      max-width: 100%;
+      min-width: 77%;
+    }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      max-width: 100%;
+      min-width: 100%;
+    }
+    @media screen and (max-width: $screen-xs) {
+      max-width: 100%;
+    }
+  }
+}

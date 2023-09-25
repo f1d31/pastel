@@ -1,0 +1,145 @@
+.prepare-new-quote{
+  .modal{
+    overflow: auto;
+  }
+  .form{
+    padding: 0 24px;
+    .form-group{
+      input{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .add-item{
+    padding: 36px 24px;
+    .property{
+      margin: 0 0 18px 0;
+    }
+    .property-price{
+      margin: 0 0 18px 0;
+      .form{
+        @media screen and (max-width: $screen-xs) {
+          display: none;
+        }
+      }
+    }
+    .custom-margin{
+      padding: 0;
+      .form{
+        padding: 0;
+        .form-group{
+          margin: 0;
+          input{
+            margin-right: 10px;
+            transform: translateY(1px);
+          }
+        }
+      }
+    }
+    span{
+      background: $border-primary01;
+      height: 1px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .btn-wrapper{
+      margin-top: 20px;
+      &.active{
+        display: none;
+      }
+      a{
+        color: $primary02;
+        img{
+          margin-right: 12px;
+        }
+      }
+    }
+    .add-item-modal{
+      padding: 24px 0 0;
+      border-radius: 6px;
+      background: $white;
+      box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.15);
+      display: none;
+
+      &.active{
+        display: block;
+      }
+      .container{
+        padding: 0 24px;
+      }
+      .item{
+        p{
+          margin: 0 0 5px;
+        }
+        h2{
+          margin: 0;
+        }
+      }
+      span{
+        background: $border-primary03;
+        margin-top: 8px;
+      }
+      .form{
+        margin-top: 28px;
+        padding: 0;
+        .form-group{
+          margin: 0;
+          label{
+            color: #A8B4B7;
+            font-size: 13px;
+            margin-left: 10px;
+          }
+        }
+        .gst{
+          display: inline-block;
+          margin-right: 26px;
+        }
+        .custom{
+          display: inline-block;
+          input{
+            transform: translateY(2px);
+          }
+        }
+      }
+      .total{
+        @media screen and (max-width: $screen-xs) {
+          text-align: left;
+        }
+      }
+      .save-item{
+        padding: 10px 16px;
+        background: #F9FBFB;
+      }
+    }
+  }
+  .create-account{
+    padding: 36px;
+    .img-wrapper{
+      margin-bottom: 12px;
+    }
+    h2{
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+    ul{
+      margin-bottom: 26px;
+      li{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+        p{
+          margin: 0;
+        }
+      }
+    }
+    .btn-wrapper{
+      a{
+        color: $primary02;
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+  }
+}

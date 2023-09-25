@@ -1,0 +1,28 @@
+.request-new-quote-modal{
+  .modal-body{
+    .quotes-message{
+      padding: 30px 36px;
+      background: #F9FBFB;
+      .content-wrapper{
+        padding: 28px 30px 80px;
+        border-radius: 2px;
+        border: 1px solid #E2E6E7;
+        background: #FFF;
+        p{
+          color: $text-primary03;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+          margin-bottom: 20px;
+        }
+      }
+      .btn-wrapper{
+        margin-top: 30px;
+        a{
+          min-width: 180px;
+        }
+      }
+    }
+  }
+}
